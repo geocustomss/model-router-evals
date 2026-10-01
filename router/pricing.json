@@ -1,0 +1,9 @@
+{
+  "_note": "Example USD per 1M tokens. Verify against each provider's pricing page before trusting cost numbers. mock/* prices are fake.",
+  "anthropic/claude-haiku-4-5-20251001": {"in": 1.0, "out": 5.0},
+  "anthropic/claude-sonnet-5-5": {"in": 3.0, "out": 15.0},
+  "openai/gpt-4o-mini": {"in": 0.15, "out": 0.6},
+  "gemini/gemini-2.0-flash": {"in": 0.1, "out": 0.4},
+  "mock/mock-small": {"in": 0.1, "out": 0.4},
+  "mock/mock-large": {"in": 1.0, "out": 4.0}
+}

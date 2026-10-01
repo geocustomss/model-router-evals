@@ -1,0 +1,20 @@
+{
+  "default": {"chain": [
+    {"provider": "anthropic", "model": "claude-haiku-4-5-20251001"},
+    {"provider": "openai", "model": "gpt-4o-mini"}
+  ]},
+  "tasks": {
+    "classify": {"chain": [
+      {"provider": "gemini", "model": "gemini-2.0-flash"},
+      {"provider": "anthropic", "model": "claude-haiku-4-5-20251001"}
+    ]},
+    "extract_json": {"chain": [
+      {"provider": "openai", "model": "gpt-4o-mini"},
+      {"provider": "anthropic", "model": "claude-haiku-4-5-20251001"}
+    ]},
+    "reasoning": {"chain": [
+      {"provider": "anthropic", "model": "claude-sonnet-5-5"},
+      {"provider": "openai", "model": "gpt-4o-mini"}
+    ]}
+  }
+}

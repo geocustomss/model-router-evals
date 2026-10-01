@@ -1,0 +1,8 @@
+{"id": "sent-1", "task": "classify", "prompt": "Classify sentiment as positive, negative, or neutral. Reply with one word.\nText: I love how fast the support team replied!", "check": {"type": "exact", "value": "positive"}}
+{"id": "sent-2", "task": "classify", "prompt": "Classify sentiment as positive, negative, or neutral. Reply with one word.\nText: The package arrived broken and I want a refund.", "check": {"type": "exact", "value": "negative"}}
+{"id": "sent-3", "task": "classify", "prompt": "Classify sentiment as positive, negative, or neutral. Reply with one word.\nText: The order ships on Tuesday.", "check": {"type": "exact", "value": "neutral"}}
+{"id": "json-1", "task": "extract_json", "prompt": "Extract the name and age as JSON with keys name and age. Reply with JSON only.\nText: Maria is 34 years old.", "check": {"type": "json_keys", "value": ["name", "age"]}}
+{"id": "json-2", "task": "extract_json", "prompt": "Extract the name and age as JSON with keys name and age. Reply with JSON only.\nText: Jonas is 52 years old.", "check": {"type": "json_keys", "value": ["name", "age"]}}
+{"id": "sum-1", "task": "summarize", "prompt": "Summarize in under 15 words:\nThe quarterly report shows revenue grew twelve percent while support costs fell because automation handled most repetitive tickets across all regions.", "check": {"type": "max_words", "value": 15}}
+{"id": "math-1", "task": "reasoning", "prompt": "What is 17 * 23? Reply with the number only.", "check": {"type": "contains", "value": "391"}}
+{"id": "math-2", "task": "reasoning", "prompt": "A train leaves at 3:15pm and the trip takes 2h50m, so when does it arrive? Reply as H:MM am/pm.", "check": {"type": "contains", "value": "6:05"}}
